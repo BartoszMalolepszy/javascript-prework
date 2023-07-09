@@ -12,4 +12,4 @@ if (randomNumber == 1){
         computerMove = 'nożyce';
 } 
 
-printMessage('Mój ruch to: ' + computerMove);
+printMessage('Ruch komputera to: ' + computerMove);
