@@ -18,7 +18,7 @@ printMessage('Ruch komputera to: ' + computerMove);
 
 console.log('Gracz wpisał: ' + playerInput);
 
-let playerMove = 'Wybrałeś złą wartość, wybierz ponownie właściwą wartość 1, pwd2 lub 3';
+let playerMove = 'Wybrałeś złą wartość, wybierz ponownie właściwą wartość 1, 2 lub 3';
 
 if(playerInput == '1'){
   playerMove = 'kamień';
@@ -29,3 +29,35 @@ if(playerInput == '1'){
 }
 
 printMessage('Mój ruch to: ' + playerMove);
+
+if( computerMove == 'kamień' && playerMove == 'papier'){
+    printMessage('Ty wygrywasz!');
+  }
+
+  else if( computerMove == 'nożce' && playerMove == 'kamień'){
+    printMessage('Ty wygrywasz!');
+  }
+
+  else if( computerMove == 'papier' && playerMove == 'nożyce'){
+    printMessage('Ty wygrywasz!');
+  }
+
+  else if( computerMove == 'kamień' && playerMove == 'nożyce'){
+    printMessage('Niestety przegrałeś, komputer wygrywa!');
+  }
+
+  else if( computerMove == 'nożce' && playerMove == 'papier'){
+    printMessage('Niestety przegrałeś, komputer wygrywa!');
+  }
+  else if( computerMove == 'papier' && playerMove == 'kamień'){
+    printMessage('Ty Niestety przegrałeś, komputer wygrywa!');
+  }
+  else if( computerMove == 'nożyce' && playerMove == 'nożyce'){
+    printMessage('Remis!');
+  }
+  else if( computerMove == 'kamień' && playerMove == 'kamień'){
+    printMessage('Remis!');
+  }
+  else if( computerMove == 'papier' && playerMove == 'papier'){
+    printMessage('Remis!');
+  }
