@@ -30,15 +30,14 @@ if(playerInput == '1'){
 
 printMessage('Mój ruch to: ' + playerMove);
 
-if ((computerMove == 'kamień' && playerMove == 'papier') ||
+if( computerMove == playerMove ){
+    printMessage('Remis!');
+}
+
+else if ((computerMove == 'kamień' && playerMove == 'papier') ||
     (computerMove == 'nożce' && playerMove == 'kamień') ||
     (computerMove == 'papier' && playerMove == 'nożyce')) {
   printMessage('Ty wygrywasz!');
-} else if {
+} else {
   printMessage('Niestety przegrałeś, komputer wygrywa!');
 }
-
-else if( computerMove == playerMove ){
-    printMessage('Remis!');
-}
-  
