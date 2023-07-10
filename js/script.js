@@ -34,11 +34,7 @@ if ((computerMove == 'kamień' && playerMove == 'papier') ||
     (computerMove == 'nożce' && playerMove == 'kamień') ||
     (computerMove == 'papier' && playerMove == 'nożyce')) {
   printMessage('Ty wygrywasz!');
-}
-
-else if ((computerMove == 'kamień' && playerMove == 'nożyce') ||
-         (computerMove == 'nożce' && playerMove == 'papier') ||
-         (computerMove == 'papier' && playerMove == 'kamień')) {
+} else {
   printMessage('Niestety przegrałeś, komputer wygrywa!');
 }
 
