@@ -33,3 +33,21 @@ function displayResult(argComputerMove, argPlayerMove) {
     printMessage('Niestety przegrałeś, komputer wygrywa!');
   }
 }
+
+function playGame(playerInput) {
+  clearMessages();
+  let randomNumber = Math.floor(Math.random() * 3 + 1);
+
+  console.log('Wylosowana liczba to: ' + randomNumber);
+
+  let computerMove = getMoveName(randomNumber);
+
+  printMessage('Ruch komputera to: ' + computerMove);
+
+  console.log('Gracz wpisał: ' + playerInput);
+
+  let playerMove = getMoveName(playerInput);
+
+  printMessage('Mój ruch to: ' + playerMove);
+  displayResult(computerMove, playerMove);
+}
