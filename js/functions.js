@@ -48,7 +48,7 @@
 
   function playGame(playerInput) {
     clearMessages();
-    let randomNumber = Math.floor(Math.random() * 3 + 1);
+    const randomNumber = Math.floor(Math.random() * 3 + 1);
 
     console.log('Wylosowana liczba to: ' + randomNumber);
 
