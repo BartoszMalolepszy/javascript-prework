@@ -1,11 +1,11 @@
 {
   const printMessage = function (msg) {
-    let div = document.createElement('div');
+    const div = document.createElement('div');
     div.innerHTML = msg;
     document.getElementById('messages').appendChild(div);
   };
 
-  let clearMessages = function () {
+  const clearMessages = function () {
     document.getElementById('messages').innerHTML = '';
   };
 
@@ -20,7 +20,7 @@
     printMessage('Nie znam ruchu o id ' + argMoveId + '.');
     return 'nieznany ruch';
   }*/
-  let getMoveName = function (argMoveId) {
+  const getMoveName = function (argMoveId) {
     if (argMoveId == 1) {
       return 'kamień';
     } else if (argMoveId == 2) {
@@ -52,13 +52,13 @@
 
     console.log('Wylosowana liczba to: ' + randomNumber);
 
-    let computerMove = getMoveName(randomNumber);
+    const computerMove = getMoveName(randomNumber);
 
     printMessage('Ruch komputera to: ' + computerMove);
 
     console.log('Gracz wpisał: ' + playerInput);
 
-    let playerMove = getMoveName(playerInput);
+    const playerMove = getMoveName(playerInput);
 
     printMessage('Mój ruch to: ' + playerMove);
     displayResult(computerMove, playerMove);
